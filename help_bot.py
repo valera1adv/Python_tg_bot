@@ -14,7 +14,7 @@ def start(message):
 @bot.message_handler(content_types=['text'])
 def get_text_messages(message):
 
-    if message.text == 'Начать': #Начало цикла
+    if message.text == 'Начать':
         markup = types.ReplyKeyboardMarkup(resize_keyboard=True) #создание новых кнопок
         btn1 = types.KeyboardButton('Дизайн')
         btn2 = types.KeyboardButton('Товары')
