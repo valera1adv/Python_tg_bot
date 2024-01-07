@@ -29,6 +29,7 @@ def answers(message):
             url = instruction["url"]
             button = types.InlineKeyboardButton(text=name, url=url)
             keyboard.add(button)
+        bot.send_message(chat_id, "Ваш вопрос: {}".format(message.text))
         bot.send_message(chat_id, "Выберите инструкцию:", reply_markup=keyboard)
 
     text = message.text
